@@ -1,0 +1,21 @@
+.bg-brown {
+    background-color: #161616 !important;
+}
+
+.article-section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+    justify-items: center;
+}
+
+@media (min-width: 769px) {
+    .article-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 992px) {
+    .article-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,144 @@
+<section class="Hero-Section">
+    <div class="bg-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="m-5 d-inline-flex flex-column align-items-center gap-3">
+                        <div
+                            class="badge-mine p-2 border border-orange-500 rounded-pill d-flex align-items-center justify-content-center text-orange-500 small">
+                            <i class="fa-solid fa-circle text-orange-500 smaller"></i>
+                            <i class="fa-solid fa-circle text-orange-500 small"></i>مرحباً بك في عدسة
+                        </div>
+                        <h1 class="text-white fw-700 text-center">اكتشف <span class="text-orange-500">فن</span><br>
+                            التصوير الفوتوغرافي
+                        </h1>
+                        <p class="text-white text-center">انغمس في أسرار المحترفين ونصائح عملية لتطوير مهاراتك في
+                            التصوير.</p>
+
+                        <div class="d-flex flex-column flex-md-row w-100 gap-3">
+                            <a class="text-decoration-none text-center text-white fw-bold w-100" routerLink="blog">
+                                <div class="p-3 rounded-pill bg-orange-500 bg-gradient">
+                                    استكشف المقالات
+                                </div>
+                            </a>
+                            <a class="text-decoration-none text-white fw-bold text-center w-100" routerLink="about">
+                                <div class="secondary-btn p-3 rounded-pill">
+                                    أعرف المزيد
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hero-section-stats">
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center gap-1 px-5 py-3 rounded-4 fs-4 bg-dark bg-opacity-50 text-orange-500">
+                                <i class="fa-solid fa-users"></i>
+                                <p class="m-0">+10ألف</p>
+                                <div class="text-white-50 smaller">قارئ</div>
+                            </div>
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center gap-1 px-5 py-3 rounded-4 fs-4 bg-dark bg-opacity-50 text-orange-500">
+                                <i class="fa-solid fa-newspaper"></i>
+                                <p class="m-0">+50</p>
+                                <div class="text-white-50 smaller">مقالة</div>
+                            </div>
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center gap-1 px-5 py-3 rounded-4 fs-4 bg-dark bg-opacity-50 text-orange-500">
+                                <i class="fa-solid fa-pen-nib"></i>
+                                <p class="m-0">6</p>
+                                <div class="text-white-50 smaller">كاتب</div>
+                            </div>
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center gap-1 px-5 py-3 rounded-4 fs-4 bg-dark bg-opacity-50 text-orange-500">
+                                <i class="fa-solid fa-folder-open"></i>
+                                <p class="m-0">4</p>
+                                <div class="text-white-50 smaller">تصنيفات</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Articles">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="my-5 mx-2  d-inline-flex flex-column align-items-start gap-3 text-white">
+                    <div
+                        class="badge-mine p-2 border border-orange-500 rounded-pill d-flex align-items-center justify-content-center text-orange-500 small">
+                        <i class="fa-solid fa-circle text-orange-500 smaller"></i>
+                        <i class="fa-solid fa-circle text-orange-500 small"></i>مميز
+                    </div>
+                    <h2>مقالات مختارة</h2>
+                    <p>محتوى منتقى لبدء رحلة تعلمك</p>
+                    <a class="text-decoration-none text-center text-white fw-bold w-100" routerLink="blog">
+                        <div class="p-3 rounded-pill bg-orange-500 bg-gradient">
+                            عرض الكل
+                        </div>
+                    </a>
+                    <section aria-label="articles-sections">
+                        @for (article of data.postsArray.posts; track $index) {
+                        @if (article.featured) {
+                        <section class="container my-5">
+                            <article class="card bg-dark text-white border-0 rounded-4 overflow-hidden shadow-lg  d-lg-flex flex-lg-row">
+                                <figure class="position-relative m-0 col-lg-6">
+                                    <img src={{article.image}} class="img-fluid" alt={{article.slug}} />
+                                    <figcaption class="position-absolute top-0 end-0 m-3">
+                                        <span class="badge bg-warning text-dark rounded-pill px-3 py-2">
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            مميز
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                                <section class="card-body p-4 col-lg-6 d-flex flex-column justify-content-lg-center">
+                                    <header class="mb-2">
+                                        <ul class="list-unstyled d-flex align-items-start gap-3 p-0 text-muted small mb-2">
+                                            <li>
+                                                <span class="badge bg-warning text-dark rounded-pill px-3 py-1">
+                                                    <i class="fa-solid fa-lightbulb me-1"></i>
+                                                    {{article.tags[$index]}}
+                                                </span>
+                                            </li>
+                                            <li class="text-gray-300">
+                                                <i class="fa-regular fa-clock me-1"></i>
+                                                {{article.readTime}}
+                                            </li>
+                                        </ul>
+                                        <h2 class="h5 fw-bold mb-2">
+                                            {{article.title}}
+                                        </h2>
+                                    </header>
+                                    <p class="text-secondary small mb-4">
+                                        {{article.excerpt}}
+                                    </p>
+                                    <footer class="d-flex flex-row-reverse justify-content-between align-items-center">
+                                        <a href="#" class="text-warning text-decoration-none fw-semibold">
+                                            اقرأ المقال
+                                            <i class="fa-solid fa-arrow-left ms-1"></i>
+                                        </a>
+                                        <address class="d-flex align-items-center gap-2 mb-0 text-reset">
+                                            <img src={{article.author.avatar}} class="rounded-circle" width="36"
+                                                height="36" alt="صورة الكاتب" />
+                                            <div class="small">
+                                                <div class="fw-semibold d-flex align-items-center gap-1">
+                                                    <i class="fa-solid fa-user"></i>
+                                                    {{article.author.name}}
+                                                </div>
+                                                <time datetime="2023-05" class="text-muted">
+                                                    <i class="fa-regular fa-calendar me-1"></i>
+                                                    {{article.date}}
+                                                </time>
+                                            </div>
+                                        </address>
+                                    </footer>
+                                </section>
+                            </article>
+                        </section>
+                        }
+                        }
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

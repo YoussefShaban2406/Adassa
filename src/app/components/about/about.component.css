@@ -1,0 +1,136 @@
+section{
+    background-color: #0a0a0a;
+}
+
+.bg-main{
+    background-image: linear-gradient(#26262680 1px, #0000 1px), linear-gradient(90deg, #26262680 1px, #0000 1px);
+    background-size: 60px 60px;
+}
+
+.secondary-btn{
+    background-color: #0000;
+    border: 1px solid #333;
+}
+
+.hero-section-stats{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.badge-mine{
+    background-color: #25150A;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  width: 6px;
+  height: 28px;
+  background-color: #ff7a00;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 3px;
+}
+
+.section-title::before {
+  right: -15px;
+}
+
+.section-title::after {
+  left: -15px;
+}
+
+.value-card {
+  background: #161616;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 122, 0, 0.5);
+}
+
+.value-card .icon {
+  font-size: 32px;
+  color: #ff7a00;
+}
+
+
+.team-badge {
+  background: rgba(255, 122, 0, 0.1);
+  color: #ff7a00;
+  border: 1px solid rgba(255, 122, 0, 0.4);
+  font-size: 14px;
+}
+
+.text-orange {
+  color: #ff7a00;
+}
+
+.team-card {
+  background: #161616;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 122, 0, 0.4);
+}
+
+.avatar-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border: 3px solid #2a2f36;
+}
+
+.verified {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: #ff7a00;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  background: #1a1f26;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.icon-box:hover {
+  background: #ff7a00;
+  color: #fff;
+}
+
+
+
+@media (min-width: 769px) {
+ .hero-section-stats{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}   
+}

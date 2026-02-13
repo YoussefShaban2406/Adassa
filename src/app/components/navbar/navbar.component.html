@@ -1,0 +1,38 @@
+<nav class="navbar bg-dark-subtle navbar-expand-lg position-relative tajawal-bold py-3" data-bs-theme="dark">
+    <div class="container">
+        <a class="navbar-brand text-white d-flex justify-content-center align-items-center gap-1" href="#"><img
+                src="/images/logo-GdqARQRt.png" alt="main logo" class="object-fit-cover" /><span class="small">عدسة
+                <span class="d-none d-xl-block text-orange-500 smaller">عالم التصوير الفوتوغرافي</span>
+            </span></a>
+
+        <div
+            class="position-absolute top-50 start-50 translate-middle d-none d-lg-flex justify-content-center align-items-center gap-3 p-3 rounded-pill border border-1">
+            <div>
+                <a class="text-decoration-none text-white" [routerLinkActiveOptions]="{exact: true}" aria-current="page" routerLinkActive="active" routerLink="">الرئيسية</a>
+            </div>
+            <div>
+                <a class="text-decoration-none text-white" routerLinkActive="active" routerLink="blog">المدونة</a>
+            </div>
+            <div>
+                <a class="text-decoration-none text-white" routerLinkActive="active" routerLink="about">من نحن</a>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav d-lg-none">
+                <a class="nav-link" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active-sm" routerLink="">الرئيسية</a>
+                <a class="nav-link" routerLinkActive="active-sm" routerLink="blog">المدونة</a>
+                <a class="nav-link" routerLinkActive="active-sm" routerLink="about">من نحن</a>
+                <div class="px-3 py-2 rounded-pill bg-orange-500 bg-gradient"><a
+                        class="nav-link text-white fw-bold text-center" routerLink="blog">ابدأ القراءة</a></div>
+            </div>
+        </div>
+        <div class="p-2 rounded-3 text-white bg-transparent bg-primary d-none d-lg-block cursor-pointer m-2"><i
+                class="fa-solid fa-magnifying-glass"></i></div>
+        
+        <a class="nav-link d-none d-lg-block" routerLink="blog"><div class="px-4 py-3 rounded-pill text-white bg-orange-500 bg-gradient">ابدأالقراءة</div></a>
+    </div>
+</nav>
