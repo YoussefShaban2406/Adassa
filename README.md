@@ -1,59 +1,40 @@
-# Aadasa
+# 📸 Adassa - Photography Blog Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.14.
+A **photography-focused blog website** demonstrating **frontend routing, pagination, and dynamic content display** using a local JSON file. This project focuses on frontend skills and does **not** rely on external APIs.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🔹 Features
 
-```bash
-ng serve
-```
+### Home Page
+- Landing page introducing the website.  
+- Navigation to other pages.  
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Blog Page
+- Displays blog posts from a local JSON file.  
 
-## Code scaffolding
+### 404 Page
+- Custom page for routes that do not exist.  
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Additional Pages
+- About Us
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🔹 Data
+- Blog data comes from a **local JSON file** (simulating a backend API).  
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 🔹 Technologies Used
+- HTML5 / CSS3 / JavaScript  
+- Frontend Framework (Angular) 
+- Routing and dynamic page rendering  
 
-To build the project run:
+---
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🔹 Project Objective
+- Practice **Routing** and page navigation  
+- Display dynamic content with **pagination**  
+- Implement **Grid/List view toggle**  
+- Handle **404 routes** gracefully  
