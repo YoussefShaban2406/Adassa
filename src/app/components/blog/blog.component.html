@@ -33,12 +33,12 @@
                 </div>
                 <div class="">
                     <div class="d-flex gap-2 flex-wrap">
-                        <div #articleCategory aria-label="0" class="article-categories article-categories-active badge bg-info bg-opacity-10 p-3 rounded-3">جميع المقالات</div>
-                        <div #articleCategory aria-label="1" class="article-categories badge bg-info bg-opacity-10 p-3 rounded-3">إضاءة</div>
-                        <div #articleCategory aria-label="2" class="article-categories badge bg-info bg-opacity-10 p-3 rounded-3">بورتريه</div>
-                        <div #articleCategory aria-label="3" class="article-categories badge bg-info bg-opacity-10 p-3 rounded-3">مناظر طبيعية</div>
-                        <div #articleCategory aria-label="4" class="article-categories badge bg-info bg-opacity-10 p-3 rounded-3">تقنيات</div>
-                        <div #articleCategory aria-label="5" class="article-categories badge bg-info bg-opacity-10 p-3 rounded-3">معدات</div>
+                        <div #articleCategory (click)="categorySelectionLength(0)" aria-label="0" class="article-categories article-categories-active badge bg-info bg-opacity-10 p-3 rounded-3">جميع المقالات</div>
+                        <div #articleCategory (click)="categorySelectionLength(1)" aria-label="1" class="article-categories badge bg-info bg-opacity-10 p-3 rounded-3">إضاءة</div>
+                        <div #articleCategory (click)="categorySelectionLength(2)" aria-label="2" class="article-categories badge bg-info bg-opacity-10 p-3 rounded-3">بورتريه</div>
+                        <div #articleCategory (click)="categorySelectionLength(3)" aria-label="3" class="article-categories badge bg-info bg-opacity-10 p-3 rounded-3">مناظر طبيعية</div>
+                        <div #articleCategory (click)="categorySelectionLength(4)" aria-label="4" class="article-categories badge bg-info bg-opacity-10 p-3 rounded-3">تقنيات</div>
+                        <div #articleCategory (click)="categorySelectionLength(5)" aria-label="5" class="article-categories badge bg-info bg-opacity-10 p-3 rounded-3">معدات</div>
 
                     </div>
                 </div>
@@ -46,7 +46,7 @@
         </div>
         <hr />
         <div class="py-4">
-            <app-articles [categ]="currentCategory"></app-articles>
+            <app-articles [categ]="currentCategory" [categLength]="currentCategoryLength"></app-articles>
         </div>
     </div>
 </section>

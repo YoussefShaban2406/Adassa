@@ -2,20 +2,46 @@
     background-color: #161616 !important;
 }
 
-.article-section{
+.articlesection {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1.25rem;
     justify-items: center;
 }
 
+.articleSectionLine {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+    justify-items: center;
+}
+
+.viewBtnactive {
+    background-color: chocolate !important;
+}
+
 @media (min-width: 769px) {
-    .article-section {
+    .articlesection {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .articleSectionLine {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.25rem;
+        justify-items: center;
+    }
 }
+
 @media (min-width: 992px) {
-    .article-section {
+    .articlesection {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .articleSectionLine {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.25rem;
+        justify-items: center;
     }
 }
