@@ -1,5 +1,6 @@
 import { Component, ElementRef, inject, Input, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { Posts } from '../../services/posts';
+import { ArticleComponent } from "../article/article.component";
 
 export enum Categories {
   All,
@@ -14,7 +15,7 @@ type articleSectionView = 'Grid' | 'List';
 
 @Component({
   selector: 'app-articles',
-  imports: [],
+  imports: [ArticleComponent],
   templateUrl: './articles.component.html',
   styleUrl: './articles.component.css',
 })
