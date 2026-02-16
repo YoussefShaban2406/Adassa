@@ -12,6 +12,7 @@ A **photography-focused blog website** demonstrating **frontend routing, paginat
 
 ### Blog Page
 - Displays blog posts from a local JSON file.  
+- Added Feature of Grid and List View
 
 ### 404 Page
 - Custom page for routes that do not exist.  
