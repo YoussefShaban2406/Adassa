@@ -1,22 +1,7 @@
 <section class="Hero-Section">
-    <div class="bg-main">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <div class="m-5 d-inline-flex flex-column align-items-center gap-3">
-                        <div
-                            class="badge-mine p-2 border border-orange-500 rounded-pill d-flex align-items-center justify-content-center text-orange-500 small">
-                            <i class="fa-solid fa-circle text-orange-500 smaller"></i>
-                            <i class="fa-solid fa-circle text-orange-500 small"></i>مدونتنا
-                        </div>
-                        <h1 class="text-white fw-700 text-center">استكشف <span
-                                class="text-orange-500">مقالاتنا</span><br></h1>
-                        <p class="text-white text-center">اكتشف الدروس والرؤى وأفضل الممارسات للتطوير الحديث</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <app-header [isStatsNone]="true" [isHomeBtnNone]="true" [headerBadge]="headerBadge"
+        [startHeaderH1]="startHeaderH1" [speacialHeaderH1]="speacialHeaderH1" [endHeaderH1]="endHeaderH1"
+        [headerMainParag]="headerMainParag" />
 </section>
 
 <section aria-label="articles-blog">

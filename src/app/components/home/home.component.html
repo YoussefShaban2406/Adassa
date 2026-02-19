@@ -1,63 +1,7 @@
-<section class="Hero-Section">
-    <div class="bg-main">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <div class="m-5 d-inline-flex flex-column align-items-center gap-3">
-                        <div
-                            class="badge-mine p-2 border border-orange-500 rounded-pill d-flex align-items-center justify-content-center text-orange-500 small">
-                            <i class="fa-solid fa-circle text-orange-500 smaller"></i>
-                            <i class="fa-solid fa-circle text-orange-500 small"></i>مرحباً بك في عدسة
-                        </div>
-                        <h1 class="text-white fw-700 text-center">اكتشف <span class="text-orange-500">فن</span><br>
-                            التصوير الفوتوغرافي
-                        </h1>
-                        <p class="text-white text-center">انغمس في أسرار المحترفين ونصائح عملية لتطوير مهاراتك في
-                            التصوير.</p>
-
-                        <div class="d-flex flex-column flex-md-row w-100 gap-3">
-                            <a class="text-decoration-none text-center text-white fw-bold w-100" routerLink="blog">
-                                <div class="p-3 rounded-pill bg-orange-500 bg-gradient">
-                                    استكشف المقالات
-                                </div>
-                            </a>
-                            <a class="text-decoration-none text-white fw-bold text-center w-100" routerLink="about">
-                                <div class="secondary-btn p-3 rounded-pill">
-                                    أعرف المزيد
-                                </div>
-                            </a>
-                        </div>
-                        <div class="hero-section-stats">
-                            <div
-                                class="d-flex flex-column justify-content-center align-items-center gap-1 px-5 py-3 rounded-4 fs-4 bg-dark bg-opacity-50 text-orange-500">
-                                <i class="fa-solid fa-users"></i>
-                                <p class="m-0">+10ألف</p>
-                                <div class="text-white-50 smaller">قارئ</div>
-                            </div>
-                            <div
-                                class="d-flex flex-column justify-content-center align-items-center gap-1 px-5 py-3 rounded-4 fs-4 bg-dark bg-opacity-50 text-orange-500">
-                                <i class="fa-solid fa-newspaper"></i>
-                                <p class="m-0">+50</p>
-                                <div class="text-white-50 smaller">مقالة</div>
-                            </div>
-                            <div
-                                class="d-flex flex-column justify-content-center align-items-center gap-1 px-5 py-3 rounded-4 fs-4 bg-dark bg-opacity-50 text-orange-500">
-                                <i class="fa-solid fa-pen-nib"></i>
-                                <p class="m-0">6</p>
-                                <div class="text-white-50 smaller">كاتب</div>
-                            </div>
-                            <div
-                                class="d-flex flex-column justify-content-center align-items-center gap-1 px-5 py-3 rounded-4 fs-4 bg-dark bg-opacity-50 text-orange-500">
-                                <i class="fa-solid fa-folder-open"></i>
-                                <p class="m-0">4</p>
-                                <div class="text-white-50 smaller">تصنيفات</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<section>
+    <app-header [isStatsNone]="false" [isHomeBtnNone]="false" [headerBadge]="headerBadge"
+        [startHeaderH1]="startHeaderH1" [speacialHeaderH1]="speacialHeaderH1" [endHeaderH1]="endHeaderH1"
+        [headerMainParag]="headerMainParag" [HomeBtnOne]="HomeBtnOne" [HomeBtnTwo]="HomeBtnTwo" />
 </section>
 <section class="Articles">
     <div class="container">

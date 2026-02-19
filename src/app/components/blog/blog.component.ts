@@ -2,10 +2,11 @@ import { Component, ElementRef, inject, QueryList, ViewChildren } from '@angular
 import { NgClass } from '@angular/common';
 import { ArticlesComponent } from "../articles/articles.component";
 import { Posts } from '../../services/posts';
+import { HeaderComponent } from "../header/header.component";
 
 @Component({
   selector: 'app-blog',
-  imports: [ArticlesComponent],
+  imports: [ArticlesComponent, HeaderComponent],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css',
 })
@@ -13,6 +14,11 @@ export class BlogComponent {
   data = inject(Posts);
   currentCategory = 0;
   currentCategoryLength: number = this.data.postsArray.posts.length;
+  headerBadge = 'مدونتنا';
+  speacialHeaderH1 = 'مقالاتنا';
+  startHeaderH1 = 'استكشف';
+  endHeaderH1 = 'التصوير الفوتوغرافي';
+  headerMainParag = 'اكتشف الدروس والرؤى وأفضل الممارسات للتطوير الحديث';
   @ViewChildren('articleCategory') articleCategory!: QueryList<ElementRef>;
 
   ngAfterViewInit() {
