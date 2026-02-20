@@ -1,4 +1,4 @@
-<article class="card bg-dark text-white border-0 rounded-4 overflow-hidden shadow-lg d-lg-flex h-100">
+<article (click)="onElemntClick($event)" routerLink="/readArticle" class="card bg-dark text-white border-0 rounded-4 overflow-hidden shadow-lg d-lg-flex h-100" [attr.aria-label]="itemID">
     <figure class="position-relative m-0 col-lg-12">
         <img src={{article.image}} class="img-fluid" alt={{article.slug}} />
         <figcaption class="position-absolute top-0 end-0 m-3">

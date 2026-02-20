@@ -24,7 +24,7 @@
                         @for (article of data.postsArray.posts; track $index; let i = $index) {
                         @if (article.featured) {
                         <section class="container my-5">
-                            <app-article [article]="article" [index]="i"></app-article>
+                            <app-article [article]="article" [index]="i" [itemID]="article.id"></app-article>
                         </section>
                         }
                         }

@@ -15,31 +15,31 @@
     @for (article of data.postsArray.posts; track $index; let i = $index) {
     @switch (categ) {
     @case (Categories.All) {
-    <app-article [article]="article" [index]="i"></app-article>
+    <app-article [article]="article" [index]="i" [itemID]="article.id" />
     }
     @case (Categories.Light) {
     @if(article.category === 'إضاءة'){
-    <app-article [article]="article" [index]="i"></app-article>
+    <app-article [article]="article" [index]="i" [itemID]="article.id" />
     }
     }
     @case (Categories.portrait) {
     @if(article.category === 'بورتريه'){
-    <app-article [article]="article" [index]="i"></app-article>
+    <app-article [article]="article" [index]="i" [itemID]="article.id" />
     }
     }
     @case (Categories.Sights) {
     @if(article.category === 'مناظر طبيعية'){
-    <app-article [article]="article" [index]="i"></app-article>
+    <app-article [article]="article" [index]="i" [itemID]="article.id" />
     }
     }
     @case (Categories.Tech) {
     @if(article.category === 'تقنيات'){
-    <app-article [article]="article" [index]="i"></app-article>
+    <app-article [article]="article" [index]="i" [itemID]="article.id" />
     }
     }
     @case (Categories.Appliances) {
     @if(article.category === 'معدات'){
-    <app-article [article]="article" [index]="i"></app-article>
+    <app-article [article]="article" [index]="i" [itemID]="article.id" />
     }
     }
     }

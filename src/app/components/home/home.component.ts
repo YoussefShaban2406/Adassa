@@ -20,5 +20,6 @@ export class HomeComponent {
   headerMainParag = 'انغمس في أسرار المحترفين ونصائح عملية لتطوير مهاراتك في التصوير.';
   HomeBtnOne = 'استكشف المقالات';
   HomeBtnTwo = 'أعرف المزيد';
-  
+
+
 }

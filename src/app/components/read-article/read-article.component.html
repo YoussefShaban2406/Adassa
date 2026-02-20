@@ -1,0 +1,24 @@
+<div class="position-relative text-white overflow-hidden">
+    <img [src]="article.image" class="w-100 h-100 object-fit-cover" [alt]="article.slug"
+        style="filter: brightness(0.5);">
+    <div class="position-absolute top-0 end-0 translate-middle-x text-left px-3 bg-dark bg-opacity-25 rounded-4 mt-3 z-3">
+        <a routerLink="/blog" class="text-decoration-none text-orange-600"><div>عوده إلي المقالات <i class="fa-solid fa-arrow-left"></i></div></a>
+    </div>
+    <div class="position-absolute top-50 start-50 translate-middle text-left px-3">
+        <span class="badge bg-warning text-dark mb-2 small rounded-4">
+            {{article.category}}
+        </span>
+        <h1 class="display-5 fw-bold mt-2">{{ article.title }}</h1>
+        <div class="d-flex justify-content-center align-items-center gap-3 mt-3 text-white-50 small flex-wrap">
+            <div><i class="fa-regular fa-calendar me-1"></i>{{ article.date }}</div>
+            <div><i class="fa-regular fa-clock me-1"></i>{{ article.readTime }}</div>
+        </div>
+        <div class="d-inline-flex align-items-center gap-2 bg-dark bg-opacity-75 rounded-pill mt-3 py-2 px-4">
+            <img [src]="article.author.avatar" class="rounded-circle" width="40" height="40" alt="author avatar">
+            <div class="text-start">
+                <div class="fw-semibold">{{ article.author.name }}</div>
+                <small class="text-gray-600">{{ article.author.role }}</small>
+            </div>
+        </div>
+    </div>
+</div>
