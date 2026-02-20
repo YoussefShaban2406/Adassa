@@ -19,6 +19,7 @@ A **photography-focused blog website** demonstrating **frontend routing, paginat
 
 ### Additional Pages
 - About Us
+- ReadArticle Page: when clicked on any Article it shows its content on another page
 
 ---
 
